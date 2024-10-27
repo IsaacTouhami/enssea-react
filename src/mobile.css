@@ -1,0 +1,169 @@
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>*/
+/* Mobile Friendly*/
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>*/
+
+
+@media screen and (max-width: 900px) {
+
+    header {
+        width: 100% !important;
+        flex-direction: column;
+    }
+
+    .Logo {
+        width: 100% !important;
+        justify-content: space-between;
+    }
+
+    .Logo img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .Logo span {
+        margin-right: 1rem !important;
+        font-size: 1rem !important;
+    }
+
+    .utilities {
+        place-self: end;
+        gap: 2rem !important;
+        margin-right: 0.5rem;
+    }
+
+    nav {
+        width: 100% !important;
+        flex-direction: column;
+        gap: 1rem;
+        opacity: 0;
+    }
+
+    nav.active {
+        opacity: 1;
+        height: fit-content;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 0;
+    }
+
+
+    .menu.expand {
+        transform: translateY(15px);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .sub-menu.expand,
+    .last-menu.expand {
+        opacity: 1;
+        pointer-events: all;
+
+    }
+
+    .searchbar {
+        margin-right: 0;
+    }
+
+
+    footer {
+        width: 100% !important;
+        gap: 1rem;
+    }
+
+    .social {
+        gap: 0.5rem;
+    }
+
+    .burgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: var(--light-text);
+        margin: 5px;
+        transition: 0.4s ease-in-out;
+
+    }
+
+
+    .burgerMenu.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burgerMenu.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burgerMenu.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    section h1 {
+        font-size: 1rem !important;
+
+    }
+
+    .skills {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .skill i,
+    .skill h3 {
+        font-size: 1rem !important;
+
+
+    }
+
+    .skill p {
+        font-size: 0.7rem !important;
+    }
+
+    .info {
+        align-items: center;
+        gap: unset !important;
+        flex-direction: column-reverse;
+    }
+
+    .splitLine {
+        width: 50px !important;
+        height: 50px !important;
+        border-left: 4px solid var(--primary) !important;
+        border-right: 4px solid var(--primary) !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        position: relative !important;
+    }
+
+    .splitLine::before,
+    .splitLine::after {
+        content: "" !important;
+        position: absolute !important;
+        width: 100px !important;
+        height: 4px !important;
+        background-color: var(--primary) !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .splitLine::before {
+        left: -100px !important;
+    }
+
+    .splitLine::after {
+        left: 45px !important;
+    }
+
+
+}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-function NavBar( ) {
+function NavBar({burgerMenu }) {
     const [expandedMenus, setExpandedMenus] = useState({});
 
     const toggleMenu = (menu) => {
@@ -12,7 +12,7 @@ function NavBar( ) {
     };
 
     return (
-        <nav>
+        <nav className={` ${burgerMenu && "active"}`}>
         <ul>
             <li className="navItem"><NavLink to =''>Accueil</NavLink></li>
             <li className="navItem"><span onClick={() => toggleMenu('aPropos')}>A Propos</span>

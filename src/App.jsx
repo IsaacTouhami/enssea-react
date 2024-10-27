@@ -1,10 +1,16 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Home from './pages/Home';
 import Error from './pages/Error';
 import { useState } from 'react';
+import Home from './pages/Home';
 import './assets/fontawesome-free-6.6.0-web/css/all.min.css';
 
 function App() {
+  document.title = "ENSSEA";
+// change document tab logo
+  const favicon = document.querySelector('link[rel="icon"]');
+  favicon.href = "/src/img/logo_enssea_oval-light.png";
+  
+
   const [darkLight, setDarkLight] = useState(false);
   const [burgerMenu, setBurgerMenu] = useState(false);
 

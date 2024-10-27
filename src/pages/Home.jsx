@@ -11,7 +11,7 @@ function Home({handleBurger , burgerMenu, darkLight, handleDarkLight}) {
 
     <>
     <Header  handleBurger={handleBurger} burgerMenu={burgerMenu} darkLight={darkLight} handleDarkLight={handleDarkLight} />
-    <NavBar ></NavBar>
+    <NavBar burgerMenu={burgerMenu}></NavBar>
     <Section>
     <h1>Accueil</h1>
             <div className="skills">
