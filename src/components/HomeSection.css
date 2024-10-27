@@ -34,6 +34,8 @@ section h1::after {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    perspective: 400px;
+
 }
 
 .skill {
@@ -48,6 +50,12 @@ section h1::after {
     width: 100%;
     max-width: 25rem;
     list-style: none;
+    transition: 0.3s ease;
+}
+
+.skill:hover {
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 0, 0, 12deg);
 }
 
 .skill i,
