@@ -6,33 +6,33 @@
 @media screen and (max-width: 900px) {
 
     header {
-        width: 100% !important;
+        width: 100%;
         flex-direction: column;
     }
 
     .Logo {
-        width: 100% !important;
+        width: 100%;
         justify-content: space-between;
     }
 
     .Logo img {
-        width: 50px !important;
-        height: 50px !important;
+        width: 50px;
+        height: 50px
     }
 
     .Logo span {
-        margin-right: 1rem !important;
-        font-size: 1rem !important;
+        margin-right: 1rem;
+        font-size: 1rem;
     }
 
     .utilities {
         place-self: end;
-        gap: 2rem !important;
+        gap: 2rem;
         margin-right: 0.5rem;
     }
 
     nav {
-        width: 100% !important;
+        width: 100%;
         flex-direction: column;
         gap: 1rem;
         opacity: 0;
@@ -51,12 +51,10 @@
 
     nav ul {
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
 
-    nav ul li a {
-        padding: 0.5rem 0;
-    }
 
     .menu::before {
         display: none;
@@ -69,16 +67,16 @@
     }
 
     .menu li {
-        font-size: 0.8rem !important;
+        font-size: 0.8rem;
     }
 
     .sub-menu li {
-        font-size: 0.6rem !important;
+        font-size: 0.6rem;
 
     }
 
     .last-menu li {
-        font-size: 0.4rem !important;
+        font-size: 0.4rem;
 
     }
 
@@ -102,7 +100,7 @@
 
 
     footer {
-        width: 100% !important;
+        width: 100%;
         gap: 1rem;
     }
 
@@ -138,7 +136,7 @@
     }
 
     section>h1 {
-        font-size: 1rem !important;
+        font-size: 1rem;
 
     }
 

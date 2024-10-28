@@ -3,7 +3,7 @@ function Header({handleBurger, burgerMenu, darkLight, handleDarkLight}) {
 
 
     return (
-        <header>
+        <header id="header">
         <div className="Logo"><img src="/src/img/logo_enssea_oval-light.png" alt=""/><span>ENSSEA Site Officiel</span></div>
         <div className="utilities">
             <div className="english"><img src="/src/img/en_gb.gif" alt="" /></div>

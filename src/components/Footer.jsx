@@ -12,6 +12,8 @@ function Footer() {
         <a href="#"><i className="fa-brands fa-instagram"></i></a>
     </div>
     <h6>© 2024 Ecole Nationale Supérieure de Statistique et d'Economie Appliquée.</h6>
+    {/* a button with arrow pointing above to go above by header id */}
+    <a href="#header" className="goTop"><i className="fa-solid fa-arrow-up"></i></a>
 </footer>
   );
 }

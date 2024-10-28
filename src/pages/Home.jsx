@@ -17,6 +17,20 @@ function Home({handleBurger , burgerMenu, darkLight, handleDarkLight}) {
     <NavBar burgerMenu={burgerMenu}></NavBar>
     <Section>
     <h1 className={styles.title}>Accueil</h1>
+                <div className={styles.annanceContainer}>
+                    <div className={styles.annanceItem}>
+                        <img src="/src/img/s1.jpg" alt="Actualité 1"/>
+                    </div>
+                    <div className={styles.annanceItem}>
+                        <img src="/src/img/s2.jpg" alt="Actualité 2"/>
+                    </div>
+                    <div className={styles.annanceItem}>
+                        <img src="/src/img/s3.jpg" alt="Actualité 3"/>
+                    </div>
+                </div>
+
+            <div className={styles.presentation}>
+            <h2>Nos capabilités</h2>
             <div className={styles.skills}>
                 <div className={styles.skill}>
                     <i className="fa-solid fa-graduation-cap"></i>
@@ -33,6 +47,11 @@ function Home({handleBurger , burgerMenu, darkLight, handleDarkLight}) {
                     <h3>Etudiants</h3>
                     <p>Les étudiants de l'ENSSEA sont parmi les plus brillants du pays.</p>
                 </div>
+            </div>
+            </div>
+    
+
+
 
 
             <div className={styles.info}>
@@ -50,6 +69,7 @@ function Home({handleBurger , burgerMenu, darkLight, handleDarkLight}) {
                 </ul>
                 <span className={styles.splitLine}></span>
                 <form action="Post" >
+                    <h1>Connecter</h1>
                     <input type="text" placeholder="Identifiant" required/>
                     <input type="password" placeholder="Mot de passe" required/>
                     <div className={styles.checkboxContainer}>
@@ -63,7 +83,6 @@ function Home({handleBurger , burgerMenu, darkLight, handleDarkLight}) {
                     </div>
                 </form>
             </div>
-        </div>
     </Section>
     <Footer></Footer>
     </>
