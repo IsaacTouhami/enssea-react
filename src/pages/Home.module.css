@@ -1,0 +1,287 @@
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>*/
+/* Home Section*/
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>*/
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: var(--primary);
+    transition: 0.3s ease-in-out;
+    animation: widthu 3s infinite alternate ease-in-out;
+
+}
+
+@keyframes widthu {
+    0% {
+        width: 0;
+    }
+
+    50%,
+    100% {
+        width: 100%;
+    }
+
+}
+
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    perspective: 400px;
+
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 25rem;
+    list-style: none;
+    transform-style: preserve-3d;
+    transition: 0.3s ease;
+}
+
+.skill:hover {
+    transform: rotateX(12deg);
+}
+
+.skill i,
+.skill h3 {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+/* info*/
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+}
+
+/* actualite */
+.actualite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    list-style: none;
+}
+
+.actualite a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.splitLine {
+    position: relative;
+    background-color: var(--primary);
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    box-shadow: var(--primary) 0 0 5px 0px;
+}
+
+.splitLine::before,
+.splitLine::after {
+    content: '';
+    box-shadow: var(--primary) 0 0 5px 0px;
+    position: absolute;
+    width: 4px;
+    height: 180px;
+    background-color: var(--primary);
+    left: 55%;
+    transform: translateX(-100%);
+}
+
+.splitLine::before {
+    top: -180px;
+}
+
+.splitLine::after {
+    bottom: -180px;
+}
+
+
+
+
+/* form */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--light-text);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #00569c;
+    box-shadow: 0 0 8px rgba(0, 86, 156, 0.2);
+    outline: none;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkboxContainer input[type="checkbox"] {
+    accent-color: #00569c;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #00569c, #0077c0);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+    background: linear-gradient(135deg, #004080, #00569c);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+form .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+form .links a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+form .links a:hover {
+    color: #0077c0;
+}
+
+/* carousel */
+.swiper {
+    width: 100%;
+    height: 800px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+        gap: 0.8rem;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+
+    .checkboxContainer label {
+        font-size: 0.85rem;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .skills {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .skill i,
+    .skill h3 {
+        font-size: 1rem !important;
+
+
+    }
+
+    .skill p {
+        font-size: 0.7rem !important;
+    }
+
+    .info {
+        align-items: center;
+        gap: unset !important;
+        flex-direction: column-reverse;
+    }
+
+    .splitLine {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .splitLine::before,
+    .splitLine::after {
+        content: "" !important;
+        position: absolute !important;
+        width: 100px !important;
+        height: 4px !important;
+        background-color: var(--primary) !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .splitLine::before {
+        left: -100px !important;
+    }
+
+    .splitLine::after {
+        left: 30px !important;
+    }
+
+}

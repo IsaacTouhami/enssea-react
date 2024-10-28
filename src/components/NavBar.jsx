@@ -14,11 +14,11 @@ function NavBar({burgerMenu }) {
     return (
         <nav className={` ${burgerMenu && "active"}`}>
         <ul>
-            <li className="navItem"><NavLink to =''>Accueil</NavLink></li>
+            <li className="navItem"><NavLink to ='/'>Accueil</NavLink></li>
             <li className="navItem"><span onClick={() => toggleMenu('aPropos')}>A Propos</span>
             <ul className={`menu ${expandedMenus['aPropos'] ? 'expand' : ''}`}>
                     <li><NavLink to =''>Historique</NavLink></li>
-                    <li><NavLink to =''>Mot du Directeur</NavLink></li>
+                    <li><NavLink to ='/MotDirecteur'>Mot du Directeur</NavLink></li>
                     <li><NavLink to =''>Structure de l'école</NavLink></li>
                     <li><NavLink to =''>Assurance Qualité</NavLink></li>
                     <li><NavLink to =''>Textes Règlementaires</NavLink></li>
@@ -147,7 +147,7 @@ function NavBar({burgerMenu }) {
             </li>
             <li className="navItem"><NavLink to =''>Bibliothéque</NavLink></li>
             <li className="navItem"><a href="https://learning.enssea.edu.dz/" target="_blank">E-Learning</a></li>
-            <li className="navItem"><NavLink to =''>Contact</NavLink></li>
+            <li className="navItem"><NavLink to ='/Contact'>Contact</NavLink></li>
         </ul>
         <div className="searchbar">
             <input type="text" placeholder="Rechercher"/>

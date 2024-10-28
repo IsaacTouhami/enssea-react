@@ -1,4 +1,3 @@
-import "./HomeSection.css";
 
 function Section({ children }) {
   return (

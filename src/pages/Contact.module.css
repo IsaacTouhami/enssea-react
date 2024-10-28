@@ -1,0 +1,104 @@
+.contact {
+    display: flex;
+    padding: 2rem;
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+    animation: glowAnimation 0.5s infinite alternate;
+}
+
+/* Glowing animation */
+@keyframes glowAnimation {
+    0% {
+        text-shadow:
+            0 0 5px var(--primary),
+            0 0 10px var(--primary),
+            0 0 15px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        text-shadow:
+            0 0 10px var(--primary),
+            0 0 20px var(--primary),
+            0 0 30px rgba(255, 255, 255, 0.5);
+    }
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px;
+}
+
+.item {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.item i {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.item p,
+.item a {
+    font-size: 1.3rem;
+    color: #555;
+    margin: 0;
+}
+
+.item a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.item a:hover {
+    color: #004080;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .item i {
+        font-size: 1.5rem;
+    }
+}

@@ -2,6 +2,8 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Error from './pages/Error';
 import { useState } from 'react';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
+import MotDirecteur from './pages/MotDirecteur';
 import './assets/fontawesome-free-6.6.0-web/css/all.min.css';
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home handleBurger={toggleBurgerMenu} burgerMenu={burgerMenu}  darkLight={darkLight} handleDarkLight={toggleDarkLight} />} />
+        <Route path="/contact" element={<Contact handleBurger={toggleBurgerMenu} burgerMenu={burgerMenu}  darkLight={darkLight} handleDarkLight={toggleDarkLight}/>} />
+        <Route path="/MotDirecteur" element={<MotDirecteur handleBurger={toggleBurgerMenu} burgerMenu={burgerMenu}  darkLight={darkLight} handleDarkLight={toggleDarkLight}></MotDirecteur>}/>
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
@@ -33,5 +37,6 @@ function App() {
 
 
 }
+
 
 export default App;

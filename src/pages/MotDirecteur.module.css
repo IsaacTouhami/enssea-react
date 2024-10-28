@@ -1,0 +1,96 @@
+/* Header Container */
+.headerContainer {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Director Image */
+.directorImage {
+    width: 25rem;
+    height: 30rem;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-align: left;
+    margin: 0;
+
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 10px;
+    background-color: var(--primary);
+    margin-top: 0.5rem;
+    animation: underLine 2s ease-in-out infinite alternate;
+}
+
+@keyframes underLine {
+    0% {
+        width: 0;
+    }
+
+    50%,
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Paragraph Styling */
+.paragraph {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #333;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.paragraph span {
+    display: inline-block;
+    text-indent: 2em;
+}
+
+/* Signature */
+.signature {
+    font-size: 1.1rem;
+    color: #333;
+    font-style: italic;
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .directorImage {
+        width: 150px;
+        height: 150px;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+}

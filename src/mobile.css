@@ -137,62 +137,9 @@
         transform: rotate(-45deg) translate(6px, -6px);
     }
 
-    section h1 {
+    section>h1 {
         font-size: 1rem !important;
 
-    }
-
-    .skills {
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .skill i,
-    .skill h3 {
-        font-size: 1rem !important;
-
-
-    }
-
-    .skill p {
-        font-size: 0.7rem !important;
-    }
-
-    .info {
-        align-items: center;
-        gap: unset !important;
-        flex-direction: column-reverse;
-    }
-
-    .splitLine {
-        width: 50px !important;
-        height: 50px !important;
-        border-left: 4px solid var(--primary) !important;
-        border-right: 4px solid var(--primary) !important;
-        border-top: none !important;
-        border-bottom: none !important;
-        position: relative !important;
-    }
-
-    .splitLine::before,
-    .splitLine::after {
-        content: "" !important;
-        position: absolute !important;
-        width: 100px !important;
-        height: 4px !important;
-        background-color: var(--primary) !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-    }
-
-    .splitLine::before {
-        left: -100px !important;
-    }
-
-    .splitLine::after {
-        left: 45px !important;
     }
 
 
