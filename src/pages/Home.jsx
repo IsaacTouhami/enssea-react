@@ -20,12 +20,15 @@ function Home({handleBurger , burgerMenu, darkLight, handleDarkLight}) {
                 <div className={styles.annanceContainer}>
                     <div className={styles.annanceItem}>
                         <img src="/src/img/s1.jpg" alt="Actualité 1"/>
+                        <span>Monsieur le directeur et diplômés</span>
                     </div>
                     <div className={styles.annanceItem}>
                         <img src="/src/img/s2.jpg" alt="Actualité 2"/>
+                        <span>Spécialités Master</span>
                     </div>
                     <div className={styles.annanceItem}>
                         <img src="/src/img/s3.jpg" alt="Actualité 3"/>
+                        <span>ENSSEA</span>
                     </div>
                 </div>
 

@@ -307,7 +307,7 @@ nav ul li span:hover::before {
 
 .sub-menu,
 .last-menu {
-  transform: translate(99%, -5rem);
+  transform: translate(99%, -3rem);
 }
 
 .sub-menu.expand,
