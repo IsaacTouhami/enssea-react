@@ -220,10 +220,22 @@
     list-style: none;
 }
 
+.actualite li {
+    transition: 0.3s ease-in-out;
+}
+
+.actualite li:hover {
+    transform: translateX(10px);
+
+}
+
+
 .actualite a {
     text-decoration: none;
     color: var(--primary);
+    transition: 0.1s ease-in-out;
 }
+
 
 .splitLine {
     position: relative;
