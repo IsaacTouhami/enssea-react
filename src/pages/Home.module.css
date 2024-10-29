@@ -181,6 +181,7 @@
     .annanceContainer {
         flex-direction: column;
         align-items: center;
+        gap: 5rem;
 
     }
 

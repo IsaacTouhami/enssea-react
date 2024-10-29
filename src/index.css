@@ -78,6 +78,7 @@ body {
   background-repeat: no-repeat;
   overflow: overlay;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>*/

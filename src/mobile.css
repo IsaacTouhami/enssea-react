@@ -53,6 +53,7 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        text-align: center;
     }
 
 
@@ -60,23 +61,30 @@
         display: none;
     }
 
+    .menu,
     .sub-menu,
     .last-menu {
+        display: none;
+        width: 100%;
+        position: static;
         transform: none;
 
     }
 
     .menu li {
         font-size: 0.8rem;
+        text-align: center;
     }
 
     .sub-menu li {
         font-size: 0.6rem;
+        text-align: center;
 
     }
 
     .last-menu li {
         font-size: 0.4rem;
+        text-align: center;
 
     }
 
@@ -84,18 +92,23 @@
     .menu.expand,
     .sub-menu.expand,
     .last-menu.expand {
-        position: static;
+        display: flex;
         background-color: transparent;
         box-shadow: none;
         opacity: 1;
         pointer-events: all;
         transform: none;
+
     }
 
 
 
     .searchbar {
         margin-right: 0;
+    }
+
+    section {
+        width: 100%;
     }
 
 
