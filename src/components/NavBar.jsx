@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 function NavBar({burgerMenu }) {
     const [expandedMenus, setExpandedMenus] = useState({});
 
