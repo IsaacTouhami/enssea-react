@@ -24,25 +24,32 @@
     margin-bottom: 1rem;
     text-align: center;
     position: relative;
-    animation: glowAnimation 0.5s infinite alternate;
 }
 
-/* Glowing animation */
-@keyframes glowAnimation {
-    0% {
-        text-shadow:
-            0 0 5px var(--primary),
-            0 0 10px var(--primary),
-            0 0 15px rgba(255, 255, 255, 0);
-    }
-
-    100% {
-        text-shadow:
-            0 0 10px var(--primary),
-            0 0 20px var(--primary),
-            0 0 30px rgba(255, 255, 255, 0.5);
-    }
+.title::before,
+.title::after {
+    content: '';
+    position: absolute;
+    border: 5px solid var(--primary);
+    width: 20px;
+    height: 20px;
 }
+
+.title::before {
+    top: -8px;
+    left: -12px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.title::after {
+    bottom: -8px;
+    right: -12px;
+    border-left: none;
+    border-top: none;
+}
+
+
 
 
 .info {

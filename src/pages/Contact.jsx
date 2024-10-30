@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import Section from "../components/Section";
+import logo from "../img/logo_enssea_oval-light.png"
 
 import styles from "./Contact.module.css";
 
@@ -13,7 +14,7 @@ function Contact( {handleBurger , burgerMenu, darkLight, handleDarkLight} ) {
     <NavBar burgerMenu={burgerMenu}></NavBar>
         <Section>
         <div className={styles.contact}>
-                <img src="/src/img/logo_enssea_oval-light.png" alt="Logo" />
+                <img src={logo} alt="Logo" />
                 <h1 className={styles.title}>Contactez Nous</h1> 
 
                 <div className={styles.info}>

@@ -52,13 +52,14 @@
 
 /* Paragraph Styling */
 .paragraph {
-    align-self: flex-start;
+    align-self: center;
     font-size: 1.2rem;
     font-weight: 900;
     color: #333;
     text-align: justify;
     line-height: 1.8;
     margin-bottom: 1rem;
+    width: 90%;
 }
 
 .paragraph span {
