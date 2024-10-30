@@ -7,6 +7,9 @@ import Header from "../components/Header";
 import { NavLink } from "react-router-dom";
 import styles from "./Home.module.css";
 
+import s1 from "../img/s1.jpg";
+import s2 from "../img/s2.jpg";
+import s3 from "../img/s3.jpg";
 
 
 function Home({handleBurger , burgerMenu, darkLight, handleDarkLight}) {
@@ -19,15 +22,15 @@ function Home({handleBurger , burgerMenu, darkLight, handleDarkLight}) {
     <h1 className={styles.title}>Accueil</h1>
                 <div className={styles.annanceContainer}>
                     <div className={styles.annanceItem}>
-                        <img src="/src/img/s1.jpg" alt="Actualité 1"/>
+                        <img src={s1} alt="Actualité 1"/>
                         <span>Monsieur le directeur et diplômés</span>
                     </div>
                     <div className={styles.annanceItem}>
-                        <img src="/src/img/s2.jpg" alt="Actualité 2"/>
+                        <img src={s2} alt="Actualité 2"/>
                         <span>Spécialités Master</span>
                     </div>
                     <div className={styles.annanceItem}>
-                        <img src="/src/img/s3.jpg" alt="Actualité 3"/>
+                        <img src={s3} alt="Actualité 3"/>
                         <span>ENSSEA</span>
                     </div>
                 </div>

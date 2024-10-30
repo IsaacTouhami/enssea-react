@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 
 import styles from './MotDirecteur.module.css';
 
+import Mr_Tomach from '../img/Mr-Tomach.png';
+
 function MotDirecteur({ handleBurger, burgerMenu, darkLight, handleDarkLight }) {
   return (
     <>
@@ -13,7 +15,7 @@ function MotDirecteur({ handleBurger, burgerMenu, darkLight, handleDarkLight }) 
       <Section>
       
         <div className={styles.headerContainer}>
-          <img src="/src/img/Mr-Tomach.png" alt="directeur" className={styles.directorImage} />
+          <img src={Mr_Tomach} alt="directeur" className={styles.directorImage} />
           <h1 className={styles.title}>Mot du Directeur</h1>
         </div>
 

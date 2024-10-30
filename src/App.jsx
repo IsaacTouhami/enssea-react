@@ -5,12 +5,15 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import MotDirecteur from './pages/MotDirecteur';
 import './assets/fontawesome-free-6.6.0-web/css/all.min.css';
+import favicon from '/src/img/logo_enssea_oval-light.png'; // use it as a variable
 
 function App() {
   document.title = "ENSSEA";
 // change document tab logo
-  const favicon = document.querySelector('link[rel="icon"]');
-  favicon.href = "/src/img/logo_enssea_oval-light.png";
+  const icon = document.querySelector('link[rel="icon"]');
+  icon.href = favicon;
+
+
   
 
   const [darkLight, setDarkLight] = useState(false);
