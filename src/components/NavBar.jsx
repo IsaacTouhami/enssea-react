@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
 
 function NavBar({burgerMenu }) {
     const [expandedMenus, setExpandedMenus] = useState({});
+    const navRef = useRef(null);
     
     
     const toggleMenu = (menu) => {
@@ -22,10 +23,21 @@ function NavBar({burgerMenu }) {
     , [burgerMenu]);
 
 // if the menu is open, when clicking in the document, the menu disappears
+useEffect(() => {
+    const handleClickOutside = (event) => {
+        if (navRef.current && !navRef.current.contains(event.target)) {
+            setExpandedMenus({});
+        }
+    };
 
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+    };
+}, []);
 
     return (
-        <nav className={` ${burgerMenu && "active"}`}>
+        <nav  ref={navRef}  className={` ${burgerMenu && "active"}`}>
         <ul>
             <li className="navItem"><NavLink to ='/'>Accueil</NavLink></li>
             <li className="navItem"><span onClick={() => toggleMenu('aPropos')}>A Propos</span>
