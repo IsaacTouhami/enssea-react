@@ -1,16 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 
 function NavBar({burgerMenu }) {
     const [expandedMenus, setExpandedMenus] = useState({});
-
+    
+    
     const toggleMenu = (menu) => {
         setExpandedMenus((prevState) => ({
             ...prevState,
             [menu]: !prevState[menu],
         }));
     };
+    //when clicking on burger menu, all menus disappear
+
+    useEffect(() => {
+        if (burgerMenu) {
+            setExpandedMenus({});
+        }
+    }
+    , [burgerMenu]);
+
+// if the menu is open, when clicking in the document, the menu disappears
+
 
     return (
         <nav className={` ${burgerMenu && "active"}`}>

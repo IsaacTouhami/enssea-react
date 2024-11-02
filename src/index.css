@@ -126,6 +126,7 @@ header {
   gap: 1rem;
   margin-left: 1rem;
   text-shadow: 0 0 5px var(--primary), 0 0 5px var(--light-text);
+  padding-top: 0.5REM;
 }
 
 .Logo img {
