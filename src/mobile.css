@@ -43,6 +43,7 @@
 
     nav.active {
         height: fit-content;
+        position: static;
         opacity: 1;
         pointer-events: all;
         transform: none;
